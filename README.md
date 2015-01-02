@@ -1,5 +1,4 @@
-# ansible-role-quassel-core
-[![Build Status](https://travis-ci.org/elnappo/ansible-role-quassel-core.svg)](https://travis-ci.org/elnappo/ansible-role-quassel-core)
+# ansible-role-quassel-core [![Build Status](https://travis-ci.org/elnappo/ansible-role-quassel-core.svg)](https://travis-ci.org/elnappo/ansible-role-quassel-core)
 
 Simply installs and start quassel-core on boot. Get more informations about Quassel at [http://quassel-irc.org/]()
 
