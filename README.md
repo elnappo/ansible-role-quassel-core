@@ -1,4 +1,4 @@
-# ansible-role-apt-cacher-ng
+# ansible-role-quassel-core
 [![Build Status](https://travis-ci.org/elnappo/ansible-role-quassel-core.svg)](https://travis-ci.org/elnappo/ansible-role-quassel-core)
 
 Simply installs and start quassel-core on boot. Get more informations about Quassel at [http://quassel-irc.org/]()
@@ -7,8 +7,8 @@ Simply installs and start quassel-core on boot. Get more informations about Quas
 Ubuntu or Debian
 
 ## Role Variables
-* `quassel-core_port: 4242`: Port to bind quassel-core
-* `quassel-core_setup_ufw: True`: Add a ufw rule to allow `quassel-core_port` port
+* `quasselcore_port: 4242`: Port to bind quassel-core
+* `quasselcore_setup_ufw: True`: Add a ufw rule to allow `quasselcore_port` port
 
 ## Dependencies
 None.

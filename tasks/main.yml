@@ -8,12 +8,13 @@
   apt: name=quassel-core update_cache=yes state=latest
 
 - name: Set quassel-core port
-  lineinfile: dest=/etc/default/quasselcore regexp='^PORT=' line='PORT="{{ quassel-core_port }}"' owner=root group=root mode=0644
-  notify: restart quassel-core
+  lineinfile: dest=/etc/default/quasselcore regexp='^PORT' line='PORT="{{ quasselcore_port }}"' owner=root group=root mode=0644
+  notify:
+  - restart quassel-core
 
 - name: Enable quassel-core on boot
-  service: name=quassel-core state=started enabled=yes
+  service: name=quasselcore state=started enabled=yes
 
 - name: Setup ufw firewall rule
-  ufw: rule=allow port={{ quassel-core_port }} proto=tcp
-  when: quassel-core_setup_ufw
+  ufw: rule=allow port={{ quasselcore_port }} proto=tcp
+  when: quasselcore_setup_ufw

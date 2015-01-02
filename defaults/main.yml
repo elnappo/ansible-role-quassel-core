@@ -1,4 +1,4 @@
 ---
 # defaults file for ansible-role-quassel-core
-quassel-core_port: 4242
-quassel-core_setup_ufw: True
+quasselcore_port: 4242
+quasselcore_setup_ufw: True
