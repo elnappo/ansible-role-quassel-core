@@ -1,5 +1,5 @@
 # ansible-role-apt-cacher-ng
-[![Build Status](https://travis-ci.org/elnappo/ansible-role-apt-cacher-ng.svg?branch=master)](https://travis-ci.org/elnappo/ansible-role-apt-cacher-ng)
+[![Build Status](https://travis-ci.org/elnappo/ansible-role-quassel-core.svg)](https://travis-ci.org/elnappo/ansible-role-quassel-core)
 
 Simply installs and start quassel-core on boot. Get more informations about Quassel at [http://quassel-irc.org/]()
 
