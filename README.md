@@ -22,9 +22,7 @@ None.
 Take a look at the Quassel Docs [http://bugs.quassel-irc.org/projects/quassel-irc/wiki]()
 
 ## License
-
 MIT
 
 ## Author Information
-
 elnappo <elnappoo@gmail.com>

@@ -8,7 +8,7 @@
   apt: name=quassel-core update_cache=yes state=latest
 
 - name: Set quassel-core port
-  lineinfile: dest=/etc/default/quasselcore regexp='^PORT="' line='PORT="{{ quassel-core_port }}"' owner=root group=root mode=0644
+  lineinfile: dest=/etc/default/quasselcore regexp='^PORT=' line='PORT="{{ quassel-core_port }}"' owner=root group=root mode=0644
   notify: restart quassel-core
 
 - name: Enable quassel-core on boot
