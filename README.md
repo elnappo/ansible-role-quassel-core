@@ -13,15 +13,21 @@ Ubuntu or Debian
 None.
 
 ## Example Playbook
-    - hosts: servers
-      roles:
-         - { role: elnappoo.quassel-core }
+
+```yaml
+- hosts: servers
+  remote_user: root
+  roles:
+     - { role: elnappoo.quassel-core }
+```
 
 ## Client configuration
 Take a look at the Quassel Docs [http://bugs.quassel-irc.org/projects/quassel-irc/wiki]()
 
 ## License
+
 MIT
 
 ## Author Information
-elnappo <elnappoo@gmail.com>
+
+elnappo <elnappo@nerdpol.io>
