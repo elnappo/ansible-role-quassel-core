@@ -1,4 +1,5 @@
-# ansible-role-quassel-core [![Build Status](https://travis-ci.org/elnappo/ansible-role-quassel-core.svg)](https://travis-ci.org/elnappo/ansible-role-quassel-core)
+# ansible-role-quassel-core
+[![Build Status](https://travis-ci.org/elnappo/ansible-role-quassel-core.svg)](https://travis-ci.org/elnappo/ansible-role-quassel-core) [![Ansible Galaxy](https://img.shields.io/badge/galaxy-elnappo.quassel--core-blue.svg?style=flat)](https://galaxy.ansible.com/elnappo/quassel-core/)
 
 Simply installs and start quassel-core on boot. Get more informations about Quassel at [http://quassel-irc.org/]()
 
@@ -18,7 +19,7 @@ None.
 - hosts: servers
   remote_user: root
   roles:
-     - { role: elnappoo.quassel-core }
+     - { role: elnappo.quassel-core }
 ```
 
 ## Client configuration
