@@ -4,10 +4,6 @@
   apt_repository: repo='ppa:mamarley/quassel'
   when: ansible_distribution == 'Ubuntu'
 
-- name: Add build-dependency PPA on Ubuntu 12.04
-  apt_repository: repo='ppa:mamarley/build-dep'
-  when: ansible_distribution == 'Ubuntu' and ansible_distribution_version == '12.04'
-
 - name: Install quassel-core
   apt: name=quassel-core state=latest
 
