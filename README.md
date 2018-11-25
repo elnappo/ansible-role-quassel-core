@@ -19,7 +19,7 @@ None.
 - hosts: servers
   remote_user: root
   roles:
-     - { role: elnappo.quassel-core }
+     - { role: elnappo.quassel_core }
 ```
 
 ## Client configuration
