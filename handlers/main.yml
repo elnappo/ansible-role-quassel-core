@@ -1,4 +1,6 @@
 ---
 # handlers file for ansible-role-quassel-core
 - name: restart quassel-core
-  service: name=quasselcore state=restarted
+  service:
+    name: quasselcore
+    state: restarted
