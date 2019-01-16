@@ -1,3 +1,4 @@
 ---
 # defaults file for ansible-role-quassel-core
 quasselcore_setup_ufw: true
+quasselcore_use_ppa: true

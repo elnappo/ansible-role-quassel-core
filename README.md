@@ -9,7 +9,8 @@ Ubuntu or Debian
 
 ## Role Variables
 
-* `quasselcore_setup_ufw: True`: Add a ufw rule
+* `quasselcore_use_ppa: true`
+* `quasselcore_setup_ufw: true` Add a ufw rule to allow port 4242
 
 ## Dependencies
 
