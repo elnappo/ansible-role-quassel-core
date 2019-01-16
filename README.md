@@ -1,16 +1,18 @@
 # ansible-role-quassel-core
 [![Build Status](https://travis-ci.org/elnappo/ansible-role-quassel-core.svg)](https://travis-ci.org/elnappo/ansible-role-quassel-core) [![Ansible Galaxy](https://img.shields.io/badge/galaxy-elnappo.quassel--core-blue.svg?style=flat)](https://galaxy.ansible.com/elnappo/quassel-core/)
 
-Simply installs and start quassel-core on boot. Get more informations about Quassel at [http://quassel-irc.org/]()
+Simply installs and start quassel-core on boot. Get more information about Quassel at [http://quassel-irc.org/]().
 
 ## Requirements
+
 Ubuntu or Debian
 
 ## Role Variables
-* `quasselcore_port: 4242`: Port to bind quassel-core
-* `quasselcore_setup_ufw: True`: Add a ufw rule to allow `quasselcore_port` port
+
+* `quasselcore_setup_ufw: True`: Add a ufw rule
 
 ## Dependencies
+
 None.
 
 ## Example Playbook
@@ -19,11 +21,12 @@ None.
 - hosts: servers
   remote_user: root
   roles:
-     - { role: elnappo.quassel_core }
+     - elnappo.quassel_core
 ```
 
 ## Client configuration
-Take a look at the Quassel Docs [http://bugs.quassel-irc.org/projects/quassel-irc/wiki]()
+
+Take a look at the Quassel docs [http://bugs.quassel-irc.org/projects/quassel-irc/wiki]()
 
 ## License
 

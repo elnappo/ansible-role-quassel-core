@@ -1,35 +1,23 @@
 ---
 # tasks file for ansible-role-quassel-core
-- name: Add quassel ppa
+- name: Add Quassel PPA
   apt_repository:
     repo: "ppa:mamarley/quassel"
-  when: ansible_distribution == 'Ubuntu'
 
 - name: Install quassel-core
   apt:
     name: quassel-core
     state: present
 
-- name: Set quassel-core port
-  lineinfile:
-    dest: /etc/default/quasselcore
-    regexp: "^PORT"
-    line: "PORT={{ quasselcore_port }}"
-    owner: root
-    group: root
-    mode: 0644
-  notify:
-  - restart quassel-core
-
 - name: Enable quassel-core on boot
   service:
     name: quasselcore
     state: started
-    enabled: yes
+    enabled: true
 
 - name: Setup ufw firewall rule
   ufw:
     rule: allow
-    port: "{{ quasselcore_port }}"
+    port: "4242"
     proto: tcp
   when: quasselcore_setup_ufw
