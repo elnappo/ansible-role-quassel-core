@@ -6,12 +6,13 @@ env:
   matrix:
     - MOLECULE_DISTRO: ubuntu1604
     - MOLECULE_DISTRO: ubuntu1804
-    - MOLECULE_DISTRO: debian8
+    - MOLECULE_DISTRO: ubuntu2004
     - MOLECULE_DISTRO: debian9
+    - MOLECULE_DISTRO: debian10
 
 install:
   - sudo modprobe ip6_tables
-  - pip install molecule yamllint ansible-lint flake8 docker pytest testinfra
+  - pip install molecule[docker] yamllint ansible-lint flake8 docker pytest testinfra
 
 script:
   - molecule test
